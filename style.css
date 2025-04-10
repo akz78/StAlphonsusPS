@@ -1,0 +1,161 @@
+/*Own code Starts */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="date"]:hover,
+select:hover {
+    border-color: #5C6BC0;
+}
+
+input[type="submit"] {
+    padding: 12px;
+    background-color: #5C6BC0;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #3F4A79;
+    transform: scale(1.03);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #5C6BC0;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Messages */
+.success-message,
+.error-message,
+.message {
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    background-color: #28a745;
+    color: white;
+}
+
+.error-message {
+    background-color: #dc3545;
+    color: white;
+}
+
+.message {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}
+/*Own code Ends */
